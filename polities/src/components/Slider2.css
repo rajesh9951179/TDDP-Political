@@ -1,0 +1,175 @@
+/* Base styles for slider and images */
+.slider {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image.active {
+    opacity: 1;
+  }
+  
+  /* Grid container and items */
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    max-width: 1200px;
+    max-height: 600px;
+    margin: auto;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    box-sizing: border-box;
+  }
+  
+  .grid-divider {
+    width: 1px;
+    background-color: black;
+    height: 100%;
+    margin: 0 10px;
+  }
+  
+  .grid-image-container img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Dots for navigation */
+  .dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: red;
+  }
+  
+  .left-dots {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-dots .dot {
+    margin: 10px 0;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 767px) {
+    .grid-container {
+      flex-direction: column;
+      height: 70%;
+      width: 90%;
+    }
+    .grid-item {
+      width: 90%;
+      margin: 10px 0;
+    }
+    .grid-divider {
+      width: 1px;
+      height: 40%;
+      margin: 10px 0;
+    }
+    .dots {
+      bottom: 10px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+      flex-direction: row;
+      height: 70%;
+      width: 80%;
+    }
+    .grid-item {
+      width: 45%;
+      margin: 0;
+    }
+    .grid-divider {
+      width: 1px;
+      height: 70%;
+    }
+    .dots {
+      bottom: 15px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .grid-container {
+      flex-direction: row;
+      height: 80%;
+      width: 80%;
+    }
+    .grid-item {
+      width: 30%;
+    }
+    .grid-divider {
+      width: 2px;
+      height: 80%;
+    }
+    .dots {
+      bottom: 20px;
+    }
+    .dot {
+      width: 15px;
+      height: 15px;
+    }
+  }

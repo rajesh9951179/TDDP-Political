@@ -1,0 +1,97 @@
+
+.Footer {
+  text-align: justify;
+}
+
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px 50px;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative; /* Ensure positioning context for the pseudo-element */
+}
+
+.footer-header::after {
+  content: '';
+  display: block;
+  width: calc(100% - 60px); /* Adjust width based on padding and logo size */
+  border-bottom: 1px solid #fff; /* Line color and thickness */
+  position: absolute;
+  bottom: -10px; /* Adjust based on spacing needed */
+  left: 50px; /* Position it below the logo */
+}
+
+.party-logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.header-text {
+  flex: 1;
+  text-align: right;
+  position: relative;
+}
+
+.header-text p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h3 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.address-section p {
+  line-height: 1.6;
+}
+
+.map {
+  margin-top: 50px;
+
+}
+
+.social-media {
+  display: flex;
+  justify-content: left; 
+  gap: 20px;
+  margin-top: 20px; 
+}
+
+.social-media a {
+  display: flex; 
+  align-items: center; 
+  color: #fff; 
+  text-decoration: none; 
+}
+
+.social-media svg {
+  width: 25px;
+  height: 25px;
+}

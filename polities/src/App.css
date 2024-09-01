@@ -1,0 +1,200 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.693);
+    color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .left-panel {
+    width: 30%;
+    padding-right: 20px;
+  }
+  
+  .right-panel {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .right-panel-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(107, 107, 107, 0.1);
+  }
+  
+  .card-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+  }
+  
+  .category-button {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(223, 223, 231);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .category-button.active {
+    background-color: #f0f0f0;
+  }
+  
+  .data-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  
+  .press-release-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+  }
+  
+  .press-release-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .press-release-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .press-release-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .col-md-4 {
+    flex-basis: 33.33%;
+  }
+  
+
+  .upcoming-events, .social-stream {
+    width: 48%;
+  }
+  
+  .bjp-live {
+    width: 50%;
+  }
+  
+
+  .card.upcoming-events .card-img-top {
+    margin-bottom: 10px; 
+  }
+  
+ 
+  .card.bjp-live {
+    margin-top: -350px; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+    
+    .left-panel, .right-panel {
+      width: 100%;
+      padding-right: 0;
+    }
+    
+    .right-panel-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .upcoming-events, .social-stream, .bjp-live {
+      width: 100%;
+    }
+    
+    .bjp-live {
+      margin-top: 10px;
+    }
+  
+    .card-img-top {
+      height: auto;
+    }
+  }

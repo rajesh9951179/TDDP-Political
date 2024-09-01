@@ -1,0 +1,129 @@
+/* .Navbar1 {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  .navbar-logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .navbar-logo span {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    position: relative;
+    margin: 0 1rem; 
+    color: white;
+    cursor: pointer;
+  }
+  
+  .navbar-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    top: 100%;
+    left: 0;
+    padding: 1rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .dropdown a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-item:hover .dropdown {
+    display: block;
+  }
+  
+  .language-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .language-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .language-btn:hover {
+    background-color: #666;
+  }
+  
+  .language-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .language-dropdown-content button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .language-dropdown-content button:hover {
+    background-color: #555;
+  }
+  
+  .language-dropdown:hover .language-dropdown-content {
+    display: block;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #ddd;
+  } 
